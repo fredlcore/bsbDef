@@ -8511,11 +8511,7 @@
      },
      "device": [
       {
-       "family": 170,
-       "var": 255
-      },
-      {
-       "family": 119,
+       "family": 255,
        "var": 255
       }
      ]
@@ -64601,6 +64597,10 @@
       {
        "family": 107,
        "var": 255
+      },
+      {
+       "family": 108,
+       "var": 255
       }
      ]
     }
@@ -64629,51 +64629,6 @@
    "min": 7001,
    "max": 7254,
    "commands": [
-    {
-     "parameter": 7252,
-     "command": "0x053D11D9",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "ENUM",
-      "datatype": "ENUM",
-      "datatype_id": 1,
-      "factor": 1,
-      "payload_length": 1,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7252_TEXT",
-      "DE": "Programmierstick Befehl",
-      "RU": "Команда карты памяти"
-     },
-     "enum": {
-      "0": {
-       "KEY": "ENUM7252_00_TEXT",
-       "DE": "Keine Operation",
-       "RU": "Бездействует"
-      },
-      "1": {
-       "KEY": "ENUM7252_01_TEXT",
-       "DE": "Lesen von Stick",
-       "RU": "Чтение с карты"
-      },
-      "2": {
-       "KEY": "ENUM7252_02_TEXT",
-       "DE": "Schreiben auf Stick",
-       "RU": "Запись на карту"
-      }
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
     {
      "parameter": 7253,
      "command": "0x053D11D8",
