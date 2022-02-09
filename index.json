@@ -1,6 +1,6 @@
 {
- "version": "2.1.0",
- "compiletime": "20211231181308",
+ "version": "2.1.3",
+ "compiletime": "20220209235153",
  "categories": {
   "0": {
    "name": {
@@ -8946,6 +8946,39 @@
       {
        "family": 255,
        "var": 255
+      },
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 739,
+     "command": "0x09050665",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "TEMP_PER_MIN",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR739_TEXT",
+      "DE": "Vorlaufsollanstieg-Maximalbegrenzung"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
       }
      ]
     },
@@ -8992,6 +9025,48 @@
      ]
     },
     {
+     "parameter": 740,
+     "command": "0x193D0663",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_WORD5_US",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR740_TEXT",
+      "CS": "Minimální omezení teploty náběhu topného okruhu1",
+      "DA": "Flow temp min limitation heat circuit 1",
+      "DE": "Vorlaufsollwert Minimum",
+      "EN": "Flow temp min limitation",
+      "ES": "Limitación Mín. Temp. Impulsión Cto.Calefac. 1",
+      "FI": "Flow temp min limitation heat circuit 1",
+      "FR": "Limitation mini température de départ CC1",
+      "HU": "Előremenő hőmérséklet alapjel minimum",
+      "IT": "Setpoint temperatura di mandata min",
+      "NL": "Aanvoertemp-min-begrenzing Groep 1",
+      "PL": "Minimalna temperatura zadana zasilania",
+      "RU": "Минимальная температура в контуре отопления",
+      "SL": "Flow temp min limitation heat circuit 1",
+      "SV": "Framl.temp minbegränsning värmekrets 1",
+      "TR": "Flow temp min limitation heat circuit 1"
+     },
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 741,
      "command": "0x213D0662",
      "type": {
@@ -9029,6 +9104,48 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 741,
+     "command": "0x193D0662",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_WORD5_US",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR741_TEXT",
+      "CS": "Maximální omezení teploty náběhu topného okruhu1",
+      "DA": "Flow temp max limitation heat circuit 1",
+      "DE": "Vorlaufsollwert Maximum",
+      "EN": "Flow temp max limitation",
+      "ES": "Limitación Máx. Temp. Impulsión Cto.Calefac. 1",
+      "FI": "Flow temp max limitation heat circuit 1",
+      "FR": "Limitation maxi température de départ CC1",
+      "HU": "Előremenő hőmérséklet alapjel maximum",
+      "IT": "Setpoint temperatura di mandata max",
+      "NL": "Aanvoertemp-max-begrenzing Groep 1",
+      "PL": "Maksymalna temperatura zadana zasilania",
+      "RU": "Максимальная температура в контуре отопления",
+      "SL": "Flow temp max limitation heat circuit 1",
+      "SV": "Framl.temp maxbegränsning värmekrets 1",
+      "TR": "Flow temp max limitation heat circuit 1"
+     },
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -20440,6 +20557,42 @@
      ]
     },
     {
+     "parameter": 1614,
+     "command": "0x313D06B8",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_WORD5_US",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR1614_TEXT",
+      "DE": "TWW Nennsollwert Maximum",
+      "FR": "Consigne réduite de température ECS maximum",
+      "HU": "HMV névleges alapjel maximum",
+      "IT": "Setpoint nominale massimo ACS",
+      "PL": "Maksymalna temperatura zadana",
+      "RU": "Максимальная температура ГВС"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 1615,
      "command": "0x253D2F83",
      "type": {
@@ -20467,6 +20620,38 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 1615,
+     "command": "0x253D2F83",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_WORD5_US",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR1615_TEXT",
+      "DE": "TWW Reduziertsollwert Minimum",
+      "HU": "HMV névleges alapjel minimum"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -24144,6 +24329,48 @@
     },
     {
      "parameter": 2210,
+     "command": "0x2D3D092C",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_WORD5_US",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2210_TEXT",
+      "CS": "Minimální omezení teploty kotle",
+      "DA": "Setpunkt min.",
+      "DE": "Sollwert Minimum",
+      "EN": "Boiler temp min limitation",
+      "ES": "Limitación Mínima de la Temperatura de Caldera",
+      "FI": "Minimi asetusarvo",
+      "FR": "Limitation mini de température de chaudière",
+      "HU": "Kazánhőmérséklet alapjel minimum",
+      "IT": "Setpoint minimo",
+      "NL": "Keteltemperatuur-minimaalbegrenzing",
+      "PL": "Minimalna temperatura zadana",
+      "RU": "Минимальная температура теплоносителя в контуре",
+      "SL": "Žiad. hodn. Min",
+      "SV": "Min begränsing panntemp",
+      "TR": "Minimum setdegeri"
+     },
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 2210,
      "command": "0x193D0663",
      "type": {
       "unit": {
@@ -24262,17 +24489,17 @@
     },
     {
      "parameter": 2212,
-     "command": "0x193D0662",
+     "command": "0x093D0952",
      "type": {
       "unit": {
        "KEY": "UNIT_DEG_TEXT",
        "DE": "°C"
       },
-      "name": "TEMP_SHORT5_US",
+      "name": "TEMP_WORD5_US",
       "datatype": "VALS",
       "datatype_id": 0,
       "factor": 2,
-      "payload_length": 1,
+      "payload_length": 2,
       "precision": 1,
       "enable_byte": 1,
       "payload_flags": 0
@@ -61737,120 +61964,37 @@
      },
      "enum": {
       "0": {
-       "KEY": "ENUM1630_02_TEXT",
-       "DE": "Kein",
-       "HU": "Nem",
-       "IT": "Nessuna",
-       "NL": "Geen",
-       "PL": "Nie",
-       "RU": "Нет"
+       "KEY": "ENUM5890_2_00_TEXT",
+       "DE": "Keine Funktion",
+       "IT": "Nessuna funzione",
+       "PL": "Brak funkcji",
+       "RU": "Не назначена"
       },
       "1": {
-       "KEY": "ENUM5950_01_TEXT",
-       "DE": "BA-Umschaltung HK+TWW",
-       "HU": "Üzemmód váltás FK+HMV",
-       "IT": "Commutazione regime CR + ACS",
-       "RU": "Смена режима работы для КО 1-3 и ГВС"
+       "KEY": "STR5957_TEXT",
+       "CS": "Funkce modemu",
+       "DE": "Modemfunktion",
+       "EN": "Modem function",
+       "ES": "Función del modem",
+       "FI": "Modeemitoiminto",
+       "FR": "Fonction modem",
+       "HU": "Modemfunkció",
+       "IT": "Temperature sonda H1",
+       "NL": "Modemfunctie",
+       "PL": "Modem",
+       "RU": "Назначение модема",
+       "SL": "Modem",
+       "SV": "Modem funktion",
+       "TR": "Modem fonksiyonu"
       },
       "2": {
-       "KEY": "ENUM5950_02_TEXT",
-       "DE": "BA-Umschaltung HK",
-       "HU": "Üzemmód váltás minden FK",
-       "IT": "Commutazione regime ACS",
-       "RU": "Смена режима работы для КО 1-3"
-      },
-      "3": {
-       "KEY": "ENUM5950_03_TEXT",
-       "DE": "BA-Umschaltung HK1",
-       "HU": "Üzemmód váltás FK1",
-       "IT": "Commutazione regime CR",
-       "RU": "Смена режима работы для КО 1"
-      },
-      "4": {
-       "KEY": "ENUM5950_04_TEXT",
-       "DE": "BA-Umschaltung HK2",
-       "HU": "Üzemmód váltás FK2",
-       "IT": "Commutazione regime CR1",
-       "RU": "Смена режима работы для КО 2"
-      },
-      "5": {
-       "KEY": "ENUM5950_05_TEXT",
-       "DE": "BA-Umschaltung HKP",
-       "HU": "Üzemmód váltás FK3",
-       "IT": "Commutazione regime CR2",
-       "RU": "Смена режима работы для КОP"
-      },
-      "6": {
-       "KEY": "STR2201_TEXT",
-       "CS": "Blokace zdroje",
-       "DA": "Varmegiverspærring",
-       "DE": "Erzeugersperre",
-       "EN": "Heat generation lock",
-       "ES": "Generación calor bloqueada",
-       "FI": "Lämm.tuoton esto",
-       "FR": "Blocage générateur",
-       "HU": "Hőtermelő blokkolása",
-       "IT": "Blocco produttore",
-       "NL": "Opwekkerblokkering",
-       "PL": "Blokada źródła ciepła",
-       "RU": "Блокировка теплогенератора",
-       "SL": "Blokovanie zdroja tepla",
-       "SV": "Blockering värmegenerering",
-       "TR": "Isitma uretimi kilitli"
+       "KEY": "ENUM5950_2_02_TEXT",
+       "DE": "Modemfunktion invers",
+       "HU": "Modem funkció inverz"
       },
       "7": {
-       "KEY": "ENUM5950_07_TEXT",
-       "DE": "Fehler- / Alarmmeldung",
-       "HU": "Hiba / riasztás üzenet",
-       "IT": "Errore /allarme messaggio",
-       "PL": "Komunikat o błędzie / alarmie",
-       "RU": "Ошибка/Авария"
-      },
-      "8": {
-       "KEY": "ENUM5950_08_TEXT",
-       "DE": "Minimaler Vorlaufsollwert",
-       "IT": "Richiesta utente CC1",
-       "PL": "Minimalna wartość zadana przepływu"
-      },
-      "9": {
-       "KEY": "STR4141_TEXT",
-       "DE": "Übertemperaturableitung",
-       "IT": "Dissipazione del calore eccedente",
-       "RU": "Рассеивание избыточного тепла (Включение насоса при перегреве)"
-      },
-      "10": {
-       "KEY": "ENUM5950_0a_TEXT",
-       "DE": "Freigabe Schwimmbad",
-       "HU": "Uszoda helyi fűtés enged.",
-       "IT": "Rilascio piscina"
-      },
-      "11": {
-       "KEY": "ENUM5950_0b_TEXT",
-       "DE": "Taupunktwächter",
-       "HU": "Harmatpont monitor",
-       "IT": "Rilascio solare piscina",
-       "PL": "Monitor punktu rosy",
-       "RU": "Отслеживание точки росы"
-      },
-      "12": {
-       "KEY": "ENUM5950_0c_TEXT",
-       "DE": "Vorlaufsollwertanhebung Hygro",
-       "IT": "Livello operazionale ACS"
-      },
-      "13": {
-       "KEY": "ENUM5950_0d_TEXT",
-       "DE": "Wärmeanforderung 10V",
-       "HU": "Teljesítmény igény 10V",
-       "IT": "Livello operazionale CR1",
-       "PL": "Zapotrzebowanie na ciepło 10V"
-      },
-      "14": {
-       "KEY": "ENUM5950_0e_TEXT",
-       "DE": "Druckmessung 10V",
-       "HU": "Nyomásmérés 10V",
-       "IT": "Livello operazionale CR2",
-       "PL": "Pomiar ciśnienia 10V",
-       "RU": "Датчик давления на 10В"
+       "KEY": "ENUM5920_07_TEXT",
+       "DE": "Torschleierfunktion"
       }
      },
      "device": [
@@ -64564,55 +64708,6 @@
       {
        "family": 28,
        "var": 255
-      },
-      {
-       "family": 96,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5964,
-     "command": "0x073D0B7D",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "SINT",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 0,
-      "enable_byte": 6,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR5964_3_TEXT",
-      "DE": "Funktionswert 1 H3",
-      "HU": "Működési érték 1 H3",
-      "RU": "Значение функции 1 H3"
-     },
-     "device": [
-      {
-       "family": 107,
-       "var": 255
-      },
-      {
-       "family": 108,
-       "var": 255
-      },
-      {
-       "family": 122,
-       "var": 255
-      },
-      {
-       "family": 123,
-       "var": 255
-      },
-      {
-       "family": 134,
-       "var": 255
       }
      ]
     }
@@ -64641,6 +64736,276 @@
    "min": 7001,
    "max": 7254,
    "commands": [
+    {
+     "parameter": 7240,
+     "command": "0x053D11B6",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_MIN_TEXT",
+       "DE": "min",
+       "RU": "мин"
+      },
+      "name": "MINUTES_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7240_TEXT",
+      "DE": "Nachfüllsperrzeit",
+      "RU": "Время блокировки долива"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7244,
+     "command": "0x053D125E",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "ENUM",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7244_TEXT",
+      "DE": "Drucküberwachung Wassernachfüllung",
+      "RU": "Котроль давления при доливе воды"
+     },
+     "enum": {
+      "0": {
+       "KEY": "ENUM48_00_TEXT",
+       "DE": "Keine",
+       "HU": "Egyik sem",
+       "IT": "Nessuno",
+       "NL": "Geen",
+       "PL": "Nie",
+       "RU": "Ничего"
+      },
+      "1": {
+       "KEY": "ENUM3095_01_TEXT",
+       "DE": "Mit Eingang H1",
+       "IT": "Con input H1",
+       "PL": "Z wejściem H1",
+       "RU": "Со входа H1"
+      },
+      "2": {
+       "KEY": "ENUM3095_02_TEXT",
+       "DE": "Mit Eingang H2 Modul 1",
+       "IT": "Con ingresso modulo H2 1",
+       "PL": "Z wejściem H2 Modul 1",
+       "RU": "Со входа H2 Модуля 1"
+      },
+      "3": {
+       "KEY": "ENUM3095_03_TEXT",
+       "DE": "Mit Eingang H2 Modul 2",
+       "IT": "Con ingresso H2 Modulo 2",
+       "PL": "Z wejściem H2 Modul 2",
+       "RU": "Со входа H2 Модуля 2"
+      },
+      "4": {
+       "KEY": "ENUM3095_04_TEXT",
+       "DE": "Mit Eingang H2 Modul 3",
+       "IT": "Con ingresso modulo H2 3",
+       "PL": "Z wejściem H2 Modul 3",
+       "RU": "Со входа H2 Модуля 3"
+      },
+      "5": {
+       "KEY": "ENUM3095_0b_TEXT",
+       "DE": "Mit Eingang H3",
+       "IT": "Con input H3",
+       "PL": "Z wejściem H3",
+       "RU": "Со входа H3"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7250,
+     "command": "0x053D11DA",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "UNKNOWN",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 0,
+      "precision": 1,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7250_TEXT",
+      "DE": "Programmierstick Position",
+      "RU": "Сохранений на карту памяти"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7250,
+     "command": "0x053D11DB",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "UNKNOWN",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 0,
+      "precision": 1,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7250_TEXT",
+      "DE": "Programmierstick Position",
+      "RU": "Сохранений на карту памяти"
+     },
+     "device": [
+      {
+       "family": 196,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7251,
+     "command": "0x00000000",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "UNKNOWN",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 0,
+      "precision": 1,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7251_TEXT",
+      "DE": "Programmierstick Bezeichnung Datensatz",
+      "RU": "Сохранение на карту памяти"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7251,
+     "command": "0x053D11DA",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_HOUR_TEXT",
+       "DE": "h",
+       "RU": "ч"
+      },
+      "name": "HOURS_SHORT",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR1_TEXT",
+      "DE": "Uhrzeit",
+      "HU": "Óra / perc",
+      "IT": "Ora / minuti",
+      "NL": "Uren/Minuten",
+      "PL": "Godziny/minuty",
+      "RU": "Часы/минуты"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 196,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7252,
+     "command": "0x053D11D9",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "ENUM",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7252_TEXT",
+      "DE": "Programmierstick Befehl",
+      "RU": "Команда карты памяти"
+     },
+     "enum": {
+      "0": {
+       "KEY": "ENUM7252_00_TEXT",
+       "DE": "Keine Operation",
+       "RU": "Бездействует"
+      },
+      "1": {
+       "KEY": "ENUM7252_01_TEXT",
+       "DE": "Lesen von Stick",
+       "RU": "Чтение с карты"
+      },
+      "2": {
+       "KEY": "ENUM7252_02_TEXT",
+       "DE": "Schreiben auf Stick",
+       "RU": "Запись на карту"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
     {
      "parameter": 7253,
      "command": "0x053D11D8",
@@ -98904,7 +99269,7 @@
     },
     {
      "parameter": 8700,
-     "command": "0x0500021F",
+     "command": "0x0505021F",
      "type": {
       "unit": {
        "KEY": "UNIT_DEG_TEXT",
@@ -98937,7 +99302,41 @@
       {
        "family": 64,
        "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 8700,
+     "command": "0x0500021F",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
       },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR8700_TEXT",
+      "CS": "Lokální čidlo venkovní teploty",
+      "DE": "Außentemperatur",
+      "EN": "Outside temp sensor local",
+      "ES": "Sonda local de Temperatura Exterior",
+      "FR": "Température extérieure locale",
+      "HU": "Külső hőmérséklet",
+      "IT": "Temperatura esterna",
+      "NL": "Lokale buitentemperatuur",
+      "PL": "Temperatura zewnętrzna",
+      "RU": "Уличная температура",
+      "SV": "Lokal utetemp.givare"
+     },
+     "device": [
       {
        "family": 90,
        "var": 255
@@ -109622,8 +110021,8 @@
      ]
     },
     {
-     "parameter": 10201,
-     "command": "0x053D0007",
+     "parameter": 10200,
+     "command": "0x05050064",
      "type": {
       "unit": {
        "DE": ""
@@ -109654,8 +110053,8 @@
      ]
     },
     {
-     "parameter": 10202,
-     "command": "0x053D0010",
+     "parameter": 10201,
+     "command": "0x053D0007",
      "type": {
       "unit": {
        "DE": ""
