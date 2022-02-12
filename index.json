@@ -8940,7 +8940,8 @@
       "KEY": "STR734_TEXT",
       "DE": "Raumsollabsenkung mit Schaltuhr",
       "IT": "Ripristino della stanza con timer",
-      "PL": "Obniżenie temperatury pomieszczenia z timerem"
+      "PL": "Obniżenie temperatury pomieszczenia z timerem",
+      "RU": "Компенсация температуры в помещении с таймером"
      },
      "device": [
       {
@@ -8973,7 +8974,8 @@
      },
      "description": {
       "KEY": "STR739_TEXT",
-      "DE": "Vorlaufsollanstieg-Maximalbegrenzung"
+      "DE": "Vorlaufsollanstieg-Maximalbegrenzung",
+      "RU": "Верхняя граница увеличения подачи"
      },
      "device": [
       {
