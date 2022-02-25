@@ -11883,18 +11883,15 @@
       "payload_flags": 0
      },
      "description": {
-      "KEY": "STR890_TEXT",
-      "DE": "Vorlaufsollwertkorrektur Drehzahlregler",
-      "IT": "Velocità di rotazione setpoint valore preimpostato CR1",
-      "PL": "Korekta prędkości regulacji zasilania",
-      "RU": "Корректировка температуры от скорости насоса"
+      "KEY": "STR890_2_TEXT",
+      "DE": "dT Proportionalbeiwert Kp"
      },
      "flags": [
       "OEM"
      ],
      "device": [
       {
-       "family": 255,
+       "family": 64,
        "var": 255
       }
      ]
@@ -11932,6 +11929,38 @@
      ]
     },
     {
+     "parameter": 891,
+     "command": "0x220508F8",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD16",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 16,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR891_TEXT",
+      "DE": "dT Vorhaltezeit Tv"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 892,
      "command": "0x2D3D2FAD",
      "type": {
@@ -11951,7 +11980,7 @@
      },
      "description": {
       "KEY": "STR892_TEXT",
-      "DE": "dT Nachstellzeit Tv"
+      "DE": "dT Nachstellzeit Tn"
      },
      "flags": [
       "OEM"
@@ -11959,6 +11988,38 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 892,
+     "command": "0x2D050659",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR892_TEXT",
+      "DE": "dT Nachstellzeit Tn"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -24491,7 +24552,7 @@
     },
     {
      "parameter": 2212,
-     "command": "0x093D0952",
+     "command": "0x2D3D0952",
      "type": {
       "unit": {
        "KEY": "UNIT_DEG_TEXT",
@@ -31349,6 +31410,33 @@
      ]
     },
     {
+     "parameter": 2540,
+     "command": "0x25052FA9",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "PROPVAL",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 16,
+      "payload_length": 2,
+      "precision": 2,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2540_TEXT",
+      "DE": "Proportionalbeiwert Kp TWW"
+     },
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 2541,
      "command": "0x113D3059",
      "type": {
@@ -31376,6 +31464,38 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 2541,
+     "command": "0x2505074C",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD16",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 16,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2541_TEXT",
+      "DE": "Vorhaltezeit Tv TWW"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -31413,6 +31533,38 @@
      ]
     },
     {
+     "parameter": 2542,
+     "command": "0x2505072A",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2542_TEXT",
+      "DE": "Nachstellzeit Tn TWW"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 2543,
      "command": "0x113D2FAA",
      "type": {
@@ -31435,6 +31587,33 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 2543,
+     "command": "0x22052FAA",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "PROPVAL",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 16,
+      "payload_length": 2,
+      "precision": 2,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2543_TEXT",
+      "DE": "Proportionalbeiwert Kp HK"
+     },
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -31533,6 +31712,38 @@
      ]
     },
     {
+     "parameter": 2546,
+     "command": "0x223D2FAE",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_SHORT",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2546_TEXT",
+      "DE": "Abtastintervall Hz/Speicher"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 2547,
      "command": "0x253D2FAF",
      "type": {
@@ -31560,6 +31771,38 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 2547,
+     "command": "0x253D2FAF",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_SHORT",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR2547_TEXT",
+      "DE": "Abtastintervall DLH"
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -50742,6 +50985,41 @@
      ]
     },
     {
+     "parameter": 5432,
+     "command": "0x22052F91",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_SHORT5",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 1,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR5432_TEXT",
+      "CS": "Max. diference zapnutí přípravy TUV (čidlo 1)",
+      "DE": "Max. Ausschaltdifferenz im BW-Betrieb (Fühler 1)",
+      "EN": "Max. switch-off differ. In DHW mode (sensor 1)",
+      "ES": "Diferencial apagad máximo en modo ACS (sensor 1)",
+      "FR": "Différentiel coupure maxi mode ECS (sonde 1)",
+      "HU": "Max.kikapcs.különbs. HMV üzemm.-ban (1.érzékelő)",
+      "NL": "Max.Uitschdiff. in WTB-Bedrijf (Opnemer 1)",
+      "SV": "Max. urkoppl.diff. i TVV-drift (givare 1)"
+     },
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 5433,
      "command": "0x21052F92",
      "type": {
@@ -50772,6 +51050,41 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 5433,
+     "command": "0x22052F92",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_SHORT5",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 1,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR5433_TEXT",
+      "CS": "Diference zapnutí přípravy TUV (čidlo 2)",
+      "DE": "Einschaltdifferenz im BW-Betrieb (Fühler 2)",
+      "EN": "Switch-on differential in DHW mode (sensor 2)",
+      "ES": "Diferencial encencido en modo ACS(sensor 2)",
+      "FR": "Différentiel encl. En mode ECS (sonde 2)",
+      "HU": "Bekap. különbség HMV üzemmódban (2.érzékelő)",
+      "NL": "Inschakeldiff. in WTB-Bedrijf (Opnemer 2)",
+      "SV": "Inkoppl.diff. i TVV-driftt (givare 2)"
+     },
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -50812,6 +51125,41 @@
      ]
     },
     {
+     "parameter": 5434,
+     "command": "0x22052FD5",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_SHORT5",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 1,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR5434_TEXT",
+      "CS": "Min. diference vypnutí TUV (čidlo 2)",
+      "DE": "Min. Ausschaltdifferenz im BW-Betrieb (Fühler 2)",
+      "EN": "Min. switch-off differential in DHW mode (sens2)",
+      "ES": "Mín. diferencial conmutación en modo ACS (sens2)",
+      "FR": "Différentiel  coupure mini  mode ECS (sonde 2)",
+      "HU": "Min.kikapcs.különbség HMV-üzemben (2.érzékelő)",
+      "NL": "Min uitschakeldiff in WTB-bedrijf (Opnemer 2)",
+      "SV": "Min. urkoppl.differens i TVV-drift (givare2)"
+     },
+     "device": [
+      {
+       "family": 64,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 5435,
      "command": "0x21052F93",
      "type": {
@@ -50842,6 +51190,41 @@
      "device": [
       {
        "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 5435,
+     "command": "0x22052F93",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP_SHORT5",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 2,
+      "payload_length": 1,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR5435_TEXT",
+      "CS": "Max. diference vypnutí přípravy TUV (čidlo 2)",
+      "DE": "Max. Ausschaltdifferenz im BW-Betrieb (Fühler 2)",
+      "EN": "Max. switch-off difer. in DHW mode (sensor 2)",
+      "ES": "Diferencial apagad máximo en modo ACS (sensor 2)",
+      "FR": "Différentiel coupure maxi mode ECS (sonde 2)",
+      "HU": "Min.kikapcs.különbs. HMV üzemm.-ban (2.érzékelő)",
+      "NL": "Max.Uitschdiff. in WTB-Bedrijf (Opnemer 2)",
+      "SV": "Max urkoppl.diff. i TVV-drift (givare 2)"
+     },
+     "device": [
+      {
+       "family": 64,
        "var": 255
       }
      ]
@@ -64566,152 +64949,6 @@
        "var": 255
       }
      ]
-    },
-    {
-     "parameter": 5962,
-     "command": "0x2A3D0656",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_DEG_TEXT",
-       "DE": "°C"
-      },
-      "name": "TEMP",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 64,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 1,
-      "payload_flags": 32
-     },
-     "description": {
-      "KEY": "STR5962_2_TEXT",
-      "DE": "Minimaler Vorlaufsollwert H2",
-      "RU": "Минимальная температура подачи H2"
-     },
-     "device": [
-      {
-       "family": 96,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5963,
-     "command": "0x073D0B7B",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_VOLT_TEXT",
-       "DE": "V",
-       "RU": "В"
-      },
-      "name": "VOLTAGE_WORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 10,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR5963_TEXT",
-      "DE": "Spannungswert 1 H3",
-      "HU": "Feszültség érték 1 H3",
-      "IT": "Livello tensione 1 H3",
-      "RU": "Напряжение 1 H3"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5963,
-     "command": "0x00000000",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "UNKNOWN",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 0,
-      "precision": 1,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR5963_2_TEXT",
-      "DE": "Spannungswert 1 H2",
-      "RU": "Напряжение 1 H2"
-     },
-     "device": [
-      {
-       "family": 96,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5964,
-     "command": "0x073D079F",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_DEG_TEXT",
-       "DE": "°C"
-      },
-      "name": "TEMP",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 64,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 1,
-      "payload_flags": 32
-     },
-     "description": {
-      "KEY": "STR5964_TEXT",
-      "DE": "Wärmeanforderung 10V H3",
-      "IT": "Valore funzione 1 H3"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5964,
-     "command": "0x063D079F",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_DEG_TEXT",
-       "DE": "°C"
-      },
-      "name": "TEMP",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 64,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 1,
-      "payload_flags": 32
-     },
-     "description": {
-      "KEY": "STR5964_2_TEXT",
-      "DE": "Temperaturwert 10V H2"
-     },
-     "device": [
-      {
-       "family": 28,
-       "var": 255
-      }
-     ]
     }
    ]
   },
@@ -64738,6 +64975,363 @@
    "min": 7001,
    "max": 7254,
    "commands": [
+    {
+     "parameter": 7170,
+     "command": "0x053D06E8",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "STRING",
+      "datatype": "STRN",
+      "datatype_id": 7,
+      "factor": 1,
+      "payload_length": 22,
+      "precision": 0,
+      "enable_byte": 8,
+      "payload_flags": 64
+     },
+     "description": {
+      "KEY": "STR7170_TEXT",
+      "DE": "Telefon Kundendienst",
+      "HU": "Felhasználói telefonos szolg.",
+      "IT": "Telefono servizio clienti",
+      "RU": "Телефон обслуживающей организации"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7181,
+     "command": "0x053D07B7",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "STRING",
+      "datatype": "STRN",
+      "datatype_id": 7,
+      "factor": 1,
+      "payload_length": 22,
+      "precision": 0,
+      "enable_byte": 8,
+      "payload_flags": 64
+     },
+     "description": {
+      "KEY": "STR7181_TEXT",
+      "DE": "Telefon Zuständigkeit 1",
+      "IT": "Telefono servizio clienti 1",
+      "RU": "Телефон вышестоящей организации 1"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7183,
+     "command": "0x053D07B8",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "STRING",
+      "datatype": "STRN",
+      "datatype_id": 7,
+      "factor": 1,
+      "payload_length": 22,
+      "precision": 0,
+      "enable_byte": 8,
+      "payload_flags": 64
+     },
+     "description": {
+      "KEY": "STR7183_TEXT",
+      "DE": "Telefon Zuständigkeit 2",
+      "IT": "Telefono servizio clienti 2",
+      "RU": "Телефон вышестоящей организации 2"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7230,
+     "command": "0x053D11B1",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "YESNO",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7230_TEXT",
+      "DE": "Reset Wassernachfüllung",
+      "HU": "Víz utántöltés törlés",
+      "RU": "Сброс счётчиков долива воды"
+     },
+     "enum": {
+      "0": {
+       "KEY": "MENU_TEXT_NO",
+       "DE": "Nein",
+       "EN": "No",
+       "HU": "Nem",
+       "NL": "Nee",
+       "PL": "Nie",
+       "RU": "Нет"
+      },
+      "1": {
+       "KEY": "MENU_TEXT_YES",
+       "DE": "Ja",
+       "EN": "Yes",
+       "HU": "Igen",
+       "IT": "Sì",
+       "PL": "Tak",
+       "RU": "Да"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7231,
+     "command": "0x053D11B2",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_DWORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 4,
+      "precision": 0,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7231_TEXT",
+      "DE": "Nachfülldauer aktuelle Woche",
+      "HU": "Újratöltési idő az aktuális héten",
+      "RU": "Время долива на текущей неделе"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7232,
+     "command": "0x053D11AF",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_DWORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 4,
+      "precision": 0,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7232_TEXT",
+      "DE": "Nachfülldauer Total",
+      "RU": "Время долива на дату"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7233,
+     "command": "0x053D11B0",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_DWORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 4,
+      "precision": 0,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7233_TEXT",
+      "DE": "Anzahl Nachfüllungen Total",
+      "RU": "Количество заполнений на дату"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7236,
+     "command": "0x053D11B5",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7236_TEXT",
+      "DE": "Min Unterdruckdauer Nachfüllung",
+      "RU": "Минимальное время наполнения низ давления"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7237,
+     "command": "0x053D125D",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7237_TEXT",
+      "DE": "Wartezeit Nachfüllung",
+      "RU": "Время ожидания долива"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7238,
+     "command": "0x053D11B3",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7238_TEXT",
+      "DE": "Maximale Nachfülldauer",
+      "RU": "Максимальное время долива"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7239,
+     "command": "0x053D11B4",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_MIN_TEXT",
+       "DE": "min",
+       "RU": "мин"
+      },
+      "name": "MINUTES_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7239_TEXT",
+      "DE": "Max Nachfülldauer Woche",
+      "RU": "Максимальное время долива в неделю"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
     {
      "parameter": 7240,
      "command": "0x053D11B6",
@@ -116948,104 +117542,6 @@
       "payload_length": 0,
       "precision": 1,
       "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR10200_TEXT",
-      "DE": "Unknown command",
-      "IT": "Comando sconosciuto",
-      "RU": "Неизвестная команда"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 10529,
-     "command": "0x153D2FA0",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "UNKNOWN",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 0,
-      "precision": 1,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR10200_TEXT",
-      "DE": "Unknown command",
-      "IT": "Comando sconosciuto",
-      "RU": "Неизвестная команда"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 10530,
-     "command": "0x113D2FA7",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_PERC_TEXT",
-       "DE": "%"
-      },
-      "name": "PERCENT_WORD1",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 6,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR10200_TEXT",
-      "DE": "Unknown command",
-      "IT": "Comando sconosciuto",
-      "RU": "Неизвестная команда"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 10531,
-     "command": "0x113D2FA8",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_PERC_TEXT",
-       "DE": "%"
-      },
-      "name": "PERCENT_WORD1",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 6,
       "payload_flags": 0
      },
      "description": {
