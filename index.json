@@ -392,6 +392,10 @@
        "var": 255
       },
       {
+       "family": 148,
+       "var": 255
+      },
+      {
        "family": 188,
        "var": 255
       }
@@ -565,6 +569,10 @@
       },
       {
        "family": 118,
+       "var": 255
+      },
+      {
+       "family": 148,
        "var": 255
       },
       {
@@ -12021,6 +12029,10 @@
       {
        "family": 64,
        "var": 255
+      },
+      {
+       "family": 148,
+       "var": 255
       }
      ]
     },
@@ -15787,6 +15799,10 @@
      "device": [
       {
        "family": 64,
+       "var": 255
+      },
+      {
+       "family": 148,
        "var": 255
       }
      ]
@@ -25844,6 +25860,10 @@
       },
       {
        "family": 123,
+       "var": 255
+      },
+      {
+       "family": 148,
        "var": 255
       },
       {
@@ -64909,44 +64929,6 @@
       {
        "family": 88,
        "var": 255
-      },
-      {
-       "family": 95,
-       "var": 255
-      },
-      {
-       "family": 96,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5962,
-     "command": "0x2B3D0656",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_DEG_TEXT",
-       "DE": "°C"
-      },
-      "name": "TEMP",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 64,
-      "payload_length": 2,
-      "precision": 1,
-      "enable_byte": 1,
-      "payload_flags": 32
-     },
-     "description": {
-      "KEY": "STR5962_TEXT",
-      "DE": "Minimaler Vorlaufsollwert H3",
-      "IT": "Setpoint minimo mandata H3",
-      "RU": "Минимальная температура подачи H3"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
       }
      ]
     }
@@ -64975,6 +64957,55 @@
    "min": 7001,
    "max": 7254,
    "commands": [
+    {
+     "parameter": 7168,
+     "command": "0x053D1A90",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "ONOFF",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7168_TEXT",
+      "DE": "Fabrikationstest Assistent"
+     },
+     "enum": {
+      "0": {
+       "KEY": "MENU_TEXT_OFF",
+       "DE": "Aus",
+       "EN": "Off",
+       "NL": "Uit",
+       "PL": "Wyłączony",
+       "RU": "Выкл"
+      },
+      "1": {
+       "KEY": "MENU_TEXT_ON",
+       "DE": "Ein",
+       "EN": "On",
+       "IT": "Attivo",
+       "NL": "Aan",
+       "PL": "Włączony",
+       "RU": "Вкл"
+      }
+     },
+     "flags": [
+      "OEM"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
     {
      "parameter": 7170,
      "command": "0x053D06E8",
@@ -92561,6 +92592,10 @@
        "var": 255
       },
       {
+       "family": 148,
+       "var": 255
+      },
+      {
        "family": 170,
        "var": 255
       },
@@ -93002,6 +93037,10 @@
       },
       {
        "family": 64,
+       "var": 255
+      },
+      {
+       "family": 148,
        "var": 255
       },
       {
@@ -100797,6 +100836,10 @@
       {
        "family": 64,
        "var": 255
+      },
+      {
+       "family": 148,
+       "var": 255
       }
      ]
     },
@@ -103920,6 +103963,10 @@
       },
       {
        "family": 64,
+       "var": 255
+      },
+      {
+       "family": 148,
        "var": 255
       }
      ]
