@@ -64958,322 +64958,6 @@
    "max": 7254,
    "commands": [
     {
-     "parameter": 7168,
-     "command": "0x053D1A90",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "ONOFF",
-      "datatype": "ENUM",
-      "datatype_id": 1,
-      "factor": 1,
-      "payload_length": 1,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7168_TEXT",
-      "DE": "Fabrikationstest Assistent"
-     },
-     "enum": {
-      "0": {
-       "KEY": "MENU_TEXT_OFF",
-       "DE": "Aus",
-       "EN": "Off",
-       "NL": "Uit",
-       "PL": "Wyłączony",
-       "RU": "Выкл"
-      },
-      "1": {
-       "KEY": "MENU_TEXT_ON",
-       "DE": "Ein",
-       "EN": "On",
-       "IT": "Attivo",
-       "NL": "Aan",
-       "PL": "Włączony",
-       "RU": "Вкл"
-      }
-     },
-     "flags": [
-      "OEM"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7170,
-     "command": "0x053D06E8",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "STRING",
-      "datatype": "STRN",
-      "datatype_id": 7,
-      "factor": 1,
-      "payload_length": 22,
-      "precision": 0,
-      "enable_byte": 8,
-      "payload_flags": 64
-     },
-     "description": {
-      "KEY": "STR7170_TEXT",
-      "DE": "Telefon Kundendienst",
-      "HU": "Felhasználói telefonos szolg.",
-      "IT": "Telefono servizio clienti",
-      "RU": "Телефон обслуживающей организации"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7181,
-     "command": "0x053D07B7",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "STRING",
-      "datatype": "STRN",
-      "datatype_id": 7,
-      "factor": 1,
-      "payload_length": 22,
-      "precision": 0,
-      "enable_byte": 8,
-      "payload_flags": 64
-     },
-     "description": {
-      "KEY": "STR7181_TEXT",
-      "DE": "Telefon Zuständigkeit 1",
-      "IT": "Telefono servizio clienti 1",
-      "RU": "Телефон вышестоящей организации 1"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7183,
-     "command": "0x053D07B8",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "STRING",
-      "datatype": "STRN",
-      "datatype_id": 7,
-      "factor": 1,
-      "payload_length": 22,
-      "precision": 0,
-      "enable_byte": 8,
-      "payload_flags": 64
-     },
-     "description": {
-      "KEY": "STR7183_TEXT",
-      "DE": "Telefon Zuständigkeit 2",
-      "IT": "Telefono servizio clienti 2",
-      "RU": "Телефон вышестоящей организации 2"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7230,
-     "command": "0x053D11B1",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "YESNO",
-      "datatype": "ENUM",
-      "datatype_id": 1,
-      "factor": 1,
-      "payload_length": 1,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7230_TEXT",
-      "DE": "Reset Wassernachfüllung",
-      "HU": "Víz utántöltés törlés",
-      "RU": "Сброс счётчиков долива воды"
-     },
-     "enum": {
-      "0": {
-       "KEY": "MENU_TEXT_NO",
-       "DE": "Nein",
-       "EN": "No",
-       "HU": "Nem",
-       "NL": "Nee",
-       "PL": "Nie",
-       "RU": "Нет"
-      },
-      "1": {
-       "KEY": "MENU_TEXT_YES",
-       "DE": "Ja",
-       "EN": "Yes",
-       "HU": "Igen",
-       "IT": "Sì",
-       "PL": "Tak",
-       "RU": "Да"
-      }
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7231,
-     "command": "0x053D11B2",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_DWORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 4,
-      "precision": 0,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7231_TEXT",
-      "DE": "Nachfülldauer aktuelle Woche",
-      "HU": "Újratöltési idő az aktuális héten",
-      "RU": "Время долива на текущей неделе"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7232,
-     "command": "0x053D11AF",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_DWORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 4,
-      "precision": 0,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7232_TEXT",
-      "DE": "Nachfülldauer Total",
-      "RU": "Время долива на дату"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7233,
-     "command": "0x053D11B0",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_DWORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 4,
-      "precision": 0,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7233_TEXT",
-      "DE": "Anzahl Nachfüllungen Total",
-      "RU": "Количество заполнений на дату"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 7236,
-     "command": "0x053D11B5",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_WORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7236_TEXT",
-      "DE": "Min Unterdruckdauer Nachfüllung",
-      "RU": "Минимальное время наполнения низ давления"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
      "parameter": 7237,
      "command": "0x053D125D",
      "type": {
@@ -110014,7 +109698,7 @@
     "RU": "Заданные пользователем"
    },
    "min": 10000,
-   "max": 14999,
+   "max": 11999,
    "commands": [
     {
      "parameter": 10000,
@@ -117673,14 +117357,292 @@
     }
    ]
   },
+  "14000": {
+   "name": {
+    "KEY": "ENUM_CAT_42_TEXT",
+    "DE": "RVD/RVP",
+    "EN": "One Wire, DHT & MAX! Sensors",
+    "IT": "categoria sconosciuta",
+    "NL": "Onbenkende categorie",
+    "PL": "nieznana kategoria",
+    "RU": "Пользовательские датчики (DHT, Dallas, MAX!)"
+   },
+   "min": 14000,
+   "max": 14999,
+   "commands": [
+    {
+     "parameter": 14081,
+     "command": "0x053D076E",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR14081_TEXT",
+      "DE": "Laufzeit Auf/Zu Antrieb Umformer"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14082,
+     "command": "0x053D076C",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14082_TEXT",
+      "DE": "P-Band XP Antrieb Umformer"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14083,
+     "command": "0x053D076D",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR14083_TEXT",
+      "DE": "Nachstellzeit TN Antrieb Umformer"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14084,
+     "command": "0x053D0771",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14084_TEXT",
+      "DE": "Überhöhung Sollwert Mischer/Wärmetauscher"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14085,
+     "command": "0x053D0780",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14085_TEXT",
+      "DE": "Gemeinsame Vorlauftemperatur Maximalbegrenzung"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14086,
+     "command": "0x053D0781",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14086_TEXT",
+      "DE": "Gemeinsame Vorlauftemperatur Minimalbegrenzung"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14087,
+     "command": "0x053D0656",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14087_TEXT",
+      "DE": "Temperaturanforderung Externer Wärmebedarfskontakt"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14088,
+     "command": "0x053D0656",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "ENUM",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR14088_TEXT",
+      "DE": "Externer Wärmebedarf Vorrang"
+     },
+     "enum": {
+      "0": {
+       "KEY": "ENUM14088_00_TEXT",
+       "DE": "Kein mit Maximalauswahl"
+      },
+      "1": {
+       "KEY": "ENUM1630_00_TEXT",
+       "DE": "Absolut",
+       "HU": "Abszolút",
+       "IT": "Assoluta",
+       "NL": "Absoluut",
+       "RU": "Абсолютный"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 14089,
+     "command": "0x053D079F",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_DEG_TEXT",
+       "DE": "°C"
+      },
+      "name": "TEMP",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 64,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 1,
+      "payload_flags": 32
+     },
+     "description": {
+      "KEY": "STR14089_TEXT",
+      "DE": "Wärmebedarfseingang DC 0..10V"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    }
+   ]
+  },
   "15000": {
    "name": {
-    "KEY": "ENUM_CAT_41_TEXT",
-    "DE": "PPS-Bus",
-    "EL": "Αρτηρία PPS",
-    "EN": "PPS bus",
-    "IT": "Bus PPS",
-    "RU": "Шина PPS"
+    "KEY": "ENUM_CAT_45_TEXT",
+    "DE": "unbekannte Kategorie"
    },
    "min": 15000,
    "max": 15099,
@@ -120250,12 +120212,7 @@
   },
   "20000": {
    "name": {
-    "KEY": "ENUM_CAT_42_TEXT",
-    "DE": "One Wire, DHT & MAX! Sensors",
-    "IT": "categoria sconosciuta",
-    "NL": "Onbenkende categorie",
-    "PL": "nieznana kategoria",
-    "RU": "Пользовательские датчики (DHT, Dallas, MAX!)"
+    "DE": ""
    },
    "min": 20000,
    "max": 20899,
