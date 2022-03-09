@@ -117641,8 +117641,12 @@
   },
   "15000": {
    "name": {
-    "KEY": "ENUM_CAT_45_TEXT",
-    "DE": "unbekannte Kategorie"
+    "KEY": "ENUM_CAT_43_TEXT",
+    "DE": "PPS-Bus",
+    "EL": "Άγνωστη κατηγορία",
+    "EN": "Unknown category",
+    "HU": "Ismeretlen kategória",
+    "RU": "Неизвестная категория"
    },
    "min": 15000,
    "max": 15099,
@@ -120212,7 +120216,8 @@
   },
   "20000": {
    "name": {
-    "DE": ""
+    "KEY": "ENUM_CAT_44_TEXT",
+    "DE": "One Wire, DHT & MAX! Sensors"
    },
    "min": 20000,
    "max": 20899,
