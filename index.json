@@ -117360,12 +117360,7 @@
   "14000": {
    "name": {
     "KEY": "ENUM_CAT_42_TEXT",
-    "DE": "RVD/RVP",
-    "EN": "One Wire, DHT & MAX! Sensors",
-    "IT": "categoria sconosciuta",
-    "NL": "Onbenkende categorie",
-    "PL": "nieznana kategoria",
-    "RU": "Пользовательские датчики (DHT, Dallas, MAX!)"
+    "DE": "RVD/RVP"
    },
    "min": 14000,
    "max": 14999,
@@ -117643,10 +117638,10 @@
    "name": {
     "KEY": "ENUM_CAT_43_TEXT",
     "DE": "PPS-Bus",
-    "EL": "Άγνωστη κατηγορία",
-    "EN": "Unknown category",
-    "HU": "Ismeretlen kategória",
-    "RU": "Неизвестная категория"
+    "EL": "Αρτηρία PPS",
+    "EN": "PPS bus",
+    "IT": "Bus PPS",
+    "RU": "Шина PPS"
    },
    "min": 15000,
    "max": 15099,
@@ -120217,7 +120212,8 @@
   "20000": {
    "name": {
     "KEY": "ENUM_CAT_44_TEXT",
-    "DE": "One Wire, DHT & MAX! Sensors"
+    "DE": "One Wire, DHT & MAX! Sensors",
+    "RU": "Пользовательские датчики (DHT, Dallas, MAX!)"
    },
    "min": 20000,
    "max": 20899,
