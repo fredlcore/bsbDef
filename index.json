@@ -282,6 +282,10 @@
       {
        "family": 162,
        "var": 14
+      },
+      {
+       "family": 123,
+       "var": 255
       }
      ]
     },
@@ -462,6 +466,10 @@
       {
        "family": 162,
        "var": 14
+      },
+      {
+       "family": 123,
+       "var": 255
       }
      ]
     },
@@ -52594,78 +52602,6 @@
        "var": 255
       }
      ]
-    },
-    {
-     "parameter": 5488,
-     "command": "0x223D301B",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_SHORT",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 1,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR5488_TEXT",
-      "CS": "Doběh čerpadla při komfortní Dlh po vyp. hořáku",
-      "DE": "Pumpennachlauf Komfort in Sekunden",
-      "EN": "pump overrrun in DHW comfort after burner off",
-      "ES": "Retraso paro bomba con ACS después paro quemador",
-      "FR": "Arrêt ret. pompe en confort CHINS si brûl. HORS",
-      "HU": "Szivattyú utánjár. Dlh-komfort-ban égő KI-nél",
-      "NL": "Pompnadraai in DLH-Comfort bij brander uit",
-      "SV": "Gångtid pump i TVV komfort efter frånslag bränn"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 5488,
-     "command": "0x213D3075",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_WORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR5488_TEXT",
-      "CS": "Doběh čerpadla při komfortní Dlh po vyp. hořáku",
-      "DE": "Pumpennachlauf Komfort in Sekunden",
-      "EN": "pump overrrun in DHW comfort after burner off",
-      "ES": "Retraso paro bomba con ACS después paro quemador",
-      "FR": "Arrêt ret. pompe en confort CHINS si brûl. HORS",
-      "HU": "Szivattyú utánjár. Dlh-komfort-ban égő KI-nél",
-      "NL": "Pompnadraai in DLH-Comfort bij brander uit",
-      "SV": "Gångtid pump i TVV komfort efter frånslag bränn"
-     },
-     "device": [
-      {
-       "family": 97,
-       "var": 255
-      }
-     ]
     }
    ]
   },
@@ -52692,6 +52628,69 @@
    "min": 7001,
    "max": 7254,
    "commands": [
+    {
+     "parameter": 7233,
+     "command": "0x053D11B0",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_DWORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 4,
+      "precision": 0,
+      "enable_byte": 0,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7233_TEXT",
+      "DE": "Anzahl Nachfüllungen Total",
+      "RU": "Количество заполнений на дату"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 7236,
+     "command": "0x053D11B5",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_SEC_TEXT",
+       "DE": "s",
+       "RU": "с"
+      },
+      "name": "SECONDS_WORD",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR7236_TEXT",
+      "DE": "Min Unterdruckdauer Nachfüllung",
+      "RU": "Минимальное время наполнения низ давления"
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
     {
      "parameter": 7237,
      "command": "0x053D125D",
