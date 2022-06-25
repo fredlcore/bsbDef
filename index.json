@@ -52629,39 +52629,6 @@
    "max": 7254,
    "commands": [
     {
-     "parameter": 7233,
-     "command": "0x053D11B0",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_DWORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 4,
-      "precision": 0,
-      "enable_byte": 0,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7233_TEXT",
-      "DE": "Anzahl Nachfüllungen Total",
-      "RU": "Количество заполнений на дату"
-     },
-     "flags": [
-      "READONLY"
-     ],
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
      "parameter": 7236,
      "command": "0x053D11B5",
      "type": {
@@ -87872,6 +87839,51 @@
       "IT": "Numero giri pompa calore 1",
       "PL": "Prędkość pompy obiegu grzewczego 1",
       "RU": "Скорость насоса контура отопления 1"
+     },
+     "flags": [
+      "READONLY"
+     ],
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
+     "parameter": 8739,
+     "command": "0x053D1A87",
+     "type": {
+      "unit": {
+       "KEY": "UNIT_PERC_TEXT",
+       "DE": "%"
+      },
+      "name": "PERCENT_WORD1",
+      "datatype": "VALS",
+      "datatype_id": 0,
+      "factor": 1,
+      "payload_length": 2,
+      "precision": 1,
+      "enable_byte": 6,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR8739_TEXT",
+      "CS": "Okolní vlhkost 1",
+      "DA": "Omgivende luftfugtighed 1",
+      "DE": "Luftfeuchtigkeit 1",
+      "EN": "Room humid 1 actual value",
+      "ES": "Humedad ambiente 1",
+      "FI": "Ympäristön kosteus 1",
+      "FR": "Humidité ambiante 1",
+      "HU": "Környezeti páratartalom 1",
+      "IT": "Umidità ambiente 1",
+      "NL": "Omgevingsvochtigheid 1",
+      "PL": "Tłumiona temperatura zewnętrzna",
+      "RU": "Влажность окружающей среды 1 текущее значение",
+      "SL": "Okolitá vlhkosť 1 aktuálna hodnota",
+      "SV": "Luftfuktighet 1 aktuellt värde",
+      "TR": "Ortam nemi 1 akım değeri"
      },
      "flags": [
       "READONLY"
