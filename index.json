@@ -619,6 +619,44 @@
      ]
     },
     {
+     "parameter": 65526,
+     "command": "0xDEADBEEF",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "ENUM",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "DE": ""
+     },
+     "enum": {
+      "257": {
+       "KEY": "ENUM_LOGMODE_01_TEXT",
+       "DE": "Write to SD card",
+       "RU": "Запись на SD-карту"
+      },
+      "2056": {
+       "KEY": "ENUM_LOGMODE_08_TEXT",
+       "DE": "Send to UDP",
+       "RU": "Отправка через UDP"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 65527,
      "command": "0xDEADBEEF",
      "type": {
@@ -639,13 +677,13 @@
      },
      "enum": {
       "0": {
-       "KEY": "ENUM_BUS_PPS_MODE_PASSIVE",
+       "KEY": "ENUM_PPS_MODE_PASSIVE_TEXT",
        "DE": "Passiv",
        "EN": "passive",
        "RU": "Пассивный"
       },
       "1": {
-       "KEY": "ENUM_BUS_PPS_MODE_QAA",
+       "KEY": "ENUM_PPS_MODE_QAA_TEXT",
        "DE": "Als Raumgerät",
        "EN": "as room unit",
        "RU": "Как комнатное устройство"
@@ -726,14 +764,6 @@
       "DE": ""
      },
      "enum": {
-      "0": {
-       "KEY": "MENU_TEXT_OFF",
-       "DE": "Aus",
-       "EN": "Off",
-       "NL": "Uit",
-       "PL": "Wyłączony",
-       "RU": "Выкл"
-      },
       "1": {
        "KEY": "ENUM_MQTT_PLAIN_TEXT",
        "DE": "Plain text",
@@ -52628,36 +52658,6 @@
    "min": 7001,
    "max": 7254,
    "commands": [
-    {
-     "parameter": 7236,
-     "command": "0x053D11B5",
-     "type": {
-      "unit": {
-       "KEY": "UNIT_SEC_TEXT",
-       "DE": "s",
-       "RU": "с"
-      },
-      "name": "SECONDS_WORD",
-      "datatype": "VALS",
-      "datatype_id": 0,
-      "factor": 1,
-      "payload_length": 2,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR7236_TEXT",
-      "DE": "Min Unterdruckdauer Nachfüllung",
-      "RU": "Минимальное время наполнения низ давления"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
     {
      "parameter": 7237,
      "command": "0x053D125D",
@@ -108282,7 +108282,7 @@
      "description": {
       "KEY": "STR20101_TEXT",
       "DE": "DHT22 Sensor Temperatur",
-      "RU": "Температура датчика DHT22"
+      "RU": "Температура воздуха DHT22"
      },
      "flags": [
       "READONLY"
@@ -108314,7 +108314,7 @@
      "description": {
       "KEY": "STR20102_TEXT",
       "DE": "DHT22 Sensor Luftfeuchtigkeit",
-      "RU": "Влажность датчика DHT22"
+      "RU": "Влажность воздуха DHT22"
      },
      "flags": [
       "READONLY"
@@ -108347,7 +108347,7 @@
      "description": {
       "KEY": "STR20103_TEXT",
       "DE": "DHT22 Sensor Abs Luftfeuchtigkeit",
-      "RU": "Абсолютная влажность датчика DHT22"
+      "RU": "Абсолютная влажность воздуха DHT22"
      },
      "flags": [
       "READONLY"
@@ -108410,7 +108410,7 @@
      "description": {
       "KEY": "STR20201_TEXT",
       "DE": "BME280 Sensor Temperatur",
-      "RU": "Температура датчика BME280"
+      "RU": "Температура воздуха BME280"
      },
      "flags": [
       "READONLY"
@@ -108442,7 +108442,7 @@
      "description": {
       "KEY": "STR20202_TEXT",
       "DE": "BME280 Sensor Luftfeuchtigkeit",
-      "RU": "Влажность датчика BME280"
+      "RU": "Влажность воздуха BME280"
      },
      "flags": [
       "READONLY"
@@ -108475,7 +108475,7 @@
      "description": {
       "KEY": "STR20203_TEXT",
       "DE": "BME280 Sensor Pressure",
-      "RU": "Давление датчика BME280"
+      "RU": "Атмосферное давление BME280"
      },
      "flags": [
       "READONLY"
@@ -108540,7 +108540,7 @@
      "description": {
       "KEY": "STR20205_TEXT",
       "DE": "BME280 Sensor Abs Luftfeuchtigkeit",
-      "RU": "Абсолютная влажность датчика BME280"
+      "RU": "Абсолютная влажность воздуха BME280"
      },
      "flags": [
       "READONLY"
@@ -108603,7 +108603,7 @@
      "description": {
       "KEY": "STR20301_TEXT",
       "DE": "DS18B20 Sensor Temperatur",
-      "RU": "Температура датчика DS18B20"
+      "RU": "Температура воздуха DS18B20"
      },
      "flags": [
       "READONLY"
@@ -108666,7 +108666,7 @@
      "description": {
       "KEY": "STR20501_TEXT",
       "DE": "MAX! Sensor Ist Temperatur",
-      "RU": "Температура датчика MAX!"
+      "RU": "Температура воздуха MAX!"
      },
      "flags": [
       "READONLY"
