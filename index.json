@@ -640,12 +640,14 @@
      "enum": {
       "257": {
        "KEY": "ENUM_LOGMODE_01_TEXT",
-       "DE": "Write to SD card",
+       "DE": "Auf SD-Karte schreiben",
+       "EN": "Write to SD card",
        "RU": "Запись на SD-карту"
       },
       "2056": {
        "KEY": "ENUM_LOGMODE_08_TEXT",
-       "DE": "Send to UDP",
+       "DE": "Als UDP-Nachrichten senden",
+       "EN": "Send to UDP",
        "RU": "Отправка через UDP"
       }
      },
