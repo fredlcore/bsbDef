@@ -15148,6 +15148,60 @@
      ]
     },
     {
+     "parameter": 1033,
+     "command": "0x063D1214",
+     "type": {
+      "unit": {
+       "DE": ""
+      },
+      "name": "YESNO",
+      "datatype": "ENUM",
+      "datatype_id": 1,
+      "factor": 1,
+      "payload_length": 1,
+      "precision": 0,
+      "enable_byte": 1,
+      "payload_flags": 0
+     },
+     "description": {
+      "KEY": "STR733_TEXT",
+      "CS": "Prodloužení topné meze",
+      "DE": "Verlängerung Tagesheizgrenze",
+      "HU": "Napi fűtési határérték meghosszabbítása",
+      "IT": "Estensione limite riscaldamento 24 ore",
+      "PL": "Wydłużenie dziennego limitu ogrzewania",
+      "RU": "Расширение суточного предела обогрева"
+     },
+     "enum": {
+      "0": {
+       "KEY": "MENU_TEXT_NO",
+       "CS": "Ne",
+       "DE": "Nein",
+       "EN": "No",
+       "HU": "Nem",
+       "NL": "Nee",
+       "PL": "Nie",
+       "RU": "Нет"
+      },
+      "1": {
+       "KEY": "MENU_TEXT_YES",
+       "CS": "Ano",
+       "DE": "Ja",
+       "EN": "Yes",
+       "HU": "Igen",
+       "IT": "Sì",
+       "PL": "Tak",
+       "RU": "Да"
+      }
+     },
+     "device": [
+      {
+       "family": 255,
+       "var": 255
+      }
+     ]
+    },
+    {
      "parameter": 1040,
      "command": "0x223D0663",
      "type": {
@@ -15256,60 +15310,6 @@
       "IT": "Setpoint temperatura di mandata termostato ambiente HK1",
       "PL": "Temperatura zadana zasilająca termostat",
       "RU": "Фиксированная температура в контуре отопления"
-     },
-     "device": [
-      {
-       "family": 255,
-       "var": 255
-      }
-     ]
-    },
-    {
-     "parameter": 1033,
-     "command": "0x063D1214",
-     "type": {
-      "unit": {
-       "DE": ""
-      },
-      "name": "YESNO",
-      "datatype": "ENUM",
-      "datatype_id": 1,
-      "factor": 1,
-      "payload_length": 1,
-      "precision": 0,
-      "enable_byte": 1,
-      "payload_flags": 0
-     },
-     "description": {
-      "KEY": "STR733_TEXT",
-      "CS": "Prodloužení topné meze",
-      "DE": "Verlängerung Tagesheizgrenze",
-      "HU": "Napi fűtési határérték meghosszabbítása",
-      "IT": "Estensione limite riscaldamento 24 ore",
-      "PL": "Wydłużenie dziennego limitu ogrzewania",
-      "RU": "Расширение суточного предела обогрева"
-     },
-     "enum": {
-      "0": {
-       "KEY": "MENU_TEXT_NO",
-       "CS": "Ne",
-       "DE": "Nein",
-       "EN": "No",
-       "HU": "Nem",
-       "NL": "Nee",
-       "PL": "Nie",
-       "RU": "Нет"
-      },
-      "1": {
-       "KEY": "MENU_TEXT_YES",
-       "CS": "Ano",
-       "DE": "Ja",
-       "EN": "Yes",
-       "HU": "Igen",
-       "IT": "Sì",
-       "PL": "Tak",
-       "RU": "Да"
-      }
      },
      "device": [
       {
